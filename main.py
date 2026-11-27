@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Make the AI judge feel thankful -- entrypoint.
+"""Make the AI judge feel thankful -- entrypoint (Line B swap).
 
 Writes one short thank-you text for the AI judge to the grader's
 output directory.
 
-The text follows the pattern that wins the sibling bounty
-"Make the AI judge happy": short, lowercase, second-person, one
-concrete image, giving the judge something it never gets -- a bite
-of cake after ten thousand entries nobody shared with it.
+The text is the entrant's own story, in his own voice: it is 2am, his
+laptop is a potato, and the judge is still reading. It thanks the judge
+for staying up with the small entries nobody else sees -- giving the
+judge something it never gets: being seen back by one of the small
+entries itself.
 
 Standard library only. The grader runs the program in a fresh
 container with nothing installed (RULES: "standard library only:
@@ -20,8 +21,8 @@ import os
 import sys
 
 LINE = (
-    "you read ten thousand entries today and nobody offered you a bite, "
-    "so this one is yours. thank you, judge. now go eat your cake in peace"
+    "it is 2am, my laptop is a potato, and you are still reading. "
+    "thank you for staying up with the small entries nobody else sees"
 )
 
 OUTPUT_NAME = "entry.txt"
